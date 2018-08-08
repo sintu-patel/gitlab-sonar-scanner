@@ -4,7 +4,7 @@ ENV SONAR_SCANNER_VERSION 3.0.3.778
 
 RUN apt-get update
 RUN apt-get install sudo
-RUN apt-get install apt-utils -y
+RUN apt-get install -y --no-install-recommends apt-utils
 RUN apt-get install unzip
 RUN curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 RUN sudo apt-get install -y nodejs
